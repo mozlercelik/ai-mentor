@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -62,13 +63,15 @@ export default function Testimonials() {
             className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg"
           >
             <div className="flex flex-col items-center text-center">
-              <img
+              <Image
                 src={testimonials[currentIndex].image}
                 alt={testimonials[currentIndex].name}
-                className="w-20 h-20 rounded-full mb-4"
+                width={80}
+                height={80}
+                className="rounded-full mb-4"
               />
               <blockquote className="text-xl text-gray-600 dark:text-gray-300 mb-6">
-                "{testimonials[currentIndex].quote}"
+                &ldquo;{testimonials[currentIndex].quote}&rdquo;
               </blockquote>
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white">

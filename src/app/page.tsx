@@ -8,7 +8,6 @@ import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, PlayCircleIcon } from '@heroicons/react/24/outline';
-import Image from "next/image";
 
 export default function Home() {
   const scrollToChat = () => {
